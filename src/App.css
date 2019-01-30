@@ -1,0 +1,120 @@
+.App {
+  text-align: center;
+}
+
+/* start search area */
+
+/* the main div */
+.searchPart {
+  border: 2px solid black;
+  background: black;
+}
+
+/* the div cotains the form and Places names */
+nav {
+  margin-left: -15px!important;
+  margin-right: 0!important;
+  overflow-y: auto!important;
+  color: white;
+  background: black;
+}
+
+/* Names list */
+.navbar-collapse.collapse ul{
+  list-style: none;
+  text-align: left;
+  margin-left: -30px;
+}
+
+.navbar-collapse.collapse ul :focus,
+.navbar-collapse.collapse ul :hover{
+  background: #5A6268;
+  padding-left: 20px;
+}
+
+
+form .btn-dark {
+  opacity: 1!important;
+  background-color: #5A6268!important;
+}
+
+/* end search area */
+
+.NoInternet {
+  height: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-top: 15%;
+}
+
+/* InfoWindow */
+.InfoWindow{
+  max-width: 350px;
+  line-height: 22px;
+}
+/* ///////////////////////////////////////////////////////// */
+    /* media query */
+@media (min-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+  nav {
+    width: 106%!important;
+  }
+  
+  form .form-control.mr-sm-2 {
+    width: 400px;
+  }
+  form .btn-dark {
+    width: 80px;
+    color: white!important;
+  }
+}
+
+@media (min-width: 768px) {
+  nav {
+    width: 103%!important;
+  }
+}
+
+@media (min-width: 992px) {
+  nav {
+    width: 111%!important;
+  }
+  .navbar-collapse.collapse {
+    display: block!important;
+  }
+
+  form .form-control.mr-sm-2,
+  form .btn-dark{
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  
+}
+
+@media (min-width: 1200px) {
+  nav {
+    width: 107%!important;
+  }
+
+  form .form-control.mr-sm-2 {
+    width: 275px;
+  }
+  form .btn-dark {
+    width: 75px;
+    margin-top: -10px!Important;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    max-width: 100%;
+  }
+  nav {
+    margin-left: -15px!important;
+    margin-right: 0!important;
+    width: 106%!important;
+  }
+}
